@@ -31,6 +31,7 @@ Cela donnerait :
     ├── /(card_revise)        # Gestion de la révision (affichage)
     ├── /_components          # Composants essentiels à la fiche
     │   ├── /elements 		  # Composants éléments d'une fiche
+    │	├── DragAndDrop.tsx       # Drag & drop des éléments
     ├── /content
     │   ├── page.tsx
     ├── /course.tsx
@@ -41,8 +42,7 @@ Cela donnerait :
     │   ├── page.tsx
     ├── /stats
     │   ├── page.tsx
-    ├── CardClient.tsx        # Gestion des tabs + pré-fetch des données
-    ├── DragAndDrop.tsx       # Drag & drop des éléments
+    ├── layout.tsx
     └── page.tsx              # Page principale
 ```
 	
