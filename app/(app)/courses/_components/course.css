@@ -1,0 +1,116 @@
+.course-item {
+    display: flex;
+    background-color: white;
+    width: min(420px, 100%);
+    min-height: 200px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-item .course-head {
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.course-item .course-head .tags-list {
+    display: flex;
+    gap: 10px;
+    padding-inline-start: unset;
+    margin-left: 15px;
+    flex-wrap: wrap;
+}
+
+.course-item .course-head .tags-list .tag-item {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    min-width: 60px;
+    background-color: #FF6F61;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.course-item .course-head .price {
+    color: #6F6C90;
+    margin-right: 15px;
+    min-width: 50px;
+    height: 20px;
+}
+
+.course-item .course-head .price p {
+    margin: 0;
+}
+
+.course-item .course-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 10px;
+}
+
+.course-item .course-content .course-title {
+    color: #170F49;
+    width: 100%;
+    min-height: 20px;
+}
+
+.course-item .course-content .course-title h1 {
+    margin: 0;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+.course-item .course-content .course-description {
+    color: #170F49;
+    width: 100%;
+    min-height: 15px;
+}
+
+.course-item .course-content .course-description p {
+    margin: 0;
+    font-size: clamp(12px, 1.5vw, 14px);
+}
+
+.course-item .course-footer {
+    display: flex;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #6F6C90;
+}
+
+.course-item .course-footer .lessons-count,
+.course-item .course-footer .participants-count {
+    margin: 0;
+    min-width: 70px;
+    min-height: 15px;
+}
+
+.course-item .course-footer .lessons-count p,
+.course-item .course-footer .participants-count p {
+    margin: 0;
+}
+
+.loading {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { background-color: #e0e0e0; }
+    50% { background-color: #f0f0f0; }
+    100% { background-color: #e0e0e0; }
+}
